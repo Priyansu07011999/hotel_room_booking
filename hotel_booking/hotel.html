@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking App</title>
+    <link rel="stylesheet" href="./hotel.css">
+</head>
+<body>
+    <div class="heading">
+        <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?cs=srgb&dl=pexels-donald-tong-189296.jpg&fm=jpg" alt="background-img">
+        <div class="overlay">
+            <div class="main">
+                <h1>Hotel Room Booking</h1>
+                <label for="name">Your Name:</label>
+                <input type="text" placeholder="Priyansu Dash" id="name"><br>
+                <label for="floor">Which Floor:</label>
+                <input type="number" min="0" max="100" placeholder="enter 01 to 100"  id="floor"><br>
+                <label for="room">Room Number:</label>
+                <input type="number" min="1" max="999" placeholder="Enter from 1 to 999"  id="room"><br><br>
+                <button class="btn-main" onclick="addingRoom()">Enter</button><br>
+            </div>
+        </div>
+    </div>
+
+    <div id='bookings'>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./hotel.js"></script>
+</body>
+</html>
